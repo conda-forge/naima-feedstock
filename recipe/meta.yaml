@@ -1,7 +1,8 @@
 {% set name = "naima" %}
-{% set version = "0.8.2" %}
+
+{% set version = "0.8.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "2580422915e09fdce90169ff4097e696605355581f05a850eaf0ec508006043b" %}
+{% set hash_value = "1ef4125ff463ca4dd934debc87a21503c405257ea3a6c8b91b9c69e268460da4" %}
 
 package:
   name: '{{ name|lower }}'
@@ -29,6 +30,7 @@ requirements:
     - matplotlib
     - scipy
     - h5py
+    - pyyaml
 
 test:
   imports:
