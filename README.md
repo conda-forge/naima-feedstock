@@ -1,6 +1,8 @@
 About naima
 ===========
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: http://github.com/zblz/naima
 
 Package license: BSD 3-clause
@@ -18,9 +20,8 @@ affine-invariant ensemble sampler for Markov Chain Monte Carlo.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/naima-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/naima-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/naima-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/naima-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/naima-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/naima-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/naima-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/naima-feedstock)
 
 Current release info
 ====================
@@ -108,3 +109,11 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@bsipocz](https://github.com/bsipocz/)
+* [@mwcraig](https://github.com/mwcraig/)
+* [@zblz](https://github.com/zblz/)
+
