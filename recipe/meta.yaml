@@ -1,8 +1,8 @@
 {% set name = "naima" %}
 
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "1ef4125ff463ca4dd934debc87a21503c405257ea3a6c8b91b9c69e268460da4" %}
+{% set hash_value = "db81fee78f4ed6e0230a4f22f967b56c3e1edf351bcbafbc8e3d7cecd4a5fe24" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 3000
+  number: 0
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
   skip: true  # [osx and py35]
 
