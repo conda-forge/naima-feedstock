@@ -22,10 +22,11 @@ requirements:
   build:
     - python
     - setuptools
+    - setuptools_scm
   run:
     - python
     - astropy >=1.0.2
-    - emcee >=2.2.0
+    - emcee >=2.2.0,<3.0
     - corner
     - matplotlib
     - scipy
