@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "python -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -24,6 +24,7 @@ requirements:
     - setuptools
     - setuptools_scm
   host:
+    - python
     - pip
   run:
     - python >=3
