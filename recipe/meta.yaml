@@ -15,8 +15,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  skip: true  # [osx and py35]
+  script: "pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -26,7 +25,7 @@ requirements:
   host:
     - pip
   run:
-    - python
+    - python >=3
     - astropy >=1.0.2
     - emcee >=2.2.0,<3.0
     - corner
