@@ -17,7 +17,7 @@ build:
   # noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True # [py2k]
+  skip: True  # [py2k]
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - setuptools_scm
     - pip
   run:
-    - python >=3
+    - python
     - astropy >=1.0.2
     - emcee >=2.2.0,<3.0
     - corner
