@@ -19,12 +19,12 @@ build:
   skip: true  # [osx and py35]
 
 requirements:
-  host:
-    - pip
   build:
     - python
     - setuptools
     - setuptools_scm
+  host:
+    - pip
   run:
     - python
     - astropy >=1.0.2
