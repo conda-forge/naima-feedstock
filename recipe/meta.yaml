@@ -1,8 +1,8 @@
 {% set name = "naima" %}
 
-{% set version = "0.8.4" %}
+{% set version = "0.9.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "db81fee78f4ed6e0230a4f22f967b56c3e1edf351bcbafbc8e3d7cecd4a5fe24" %}
+{% set hash_value = "a4c2ead64673f763e1527c4ed925ab8416ae8c8eac3efebaae32174518082b59" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,18 +14,21 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
+  # noarch: python
   number: 0
-  script: python setup.py install --offline --single-version-externally-managed --record=record.txt
-  skip: true  # [osx and py35]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: True  # [py2k]
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
+    - setuptools_scm
+    - pip
   run:
     - python
     - astropy >=1.0.2
-    - emcee >=2.2.0
+    - emcee >=2.2.0,<3.0
     - corner
     - matplotlib
     - scipy
