@@ -1,8 +1,8 @@
 {% set name = "naima" %}
 
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a4c2ead64673f763e1527c4ed925ab8416ae8c8eac3efebaae32174518082b59" %}
+{% set hash_value = "af5db939ded57ba4136e35fb987da106d0e195445da7752870b9b72911fdc342" %}
 
 package:
   name: '{{ name|lower }}'
