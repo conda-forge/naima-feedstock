@@ -1,8 +1,6 @@
 {% set name = "naima" %}
 
 {% set version = "0.9.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "af5db939ded57ba4136e35fb987da106d0e195445da7752870b9b72911fdc342" %}
 
 package:
   name: '{{ name|lower }}'
@@ -11,10 +9,10 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  'sha256': 'af5db939ded57ba4136e35fb987da106d0e195445da7752870b9b72911fdc342'
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [py2k]
 
