@@ -24,8 +24,9 @@ requirements:
     - pip
   run:
     - python
-    - astropy >=1.0.2
-    - emcee >=2.2.0,<3.0
+    - numpy
+    - astropy >=4.3
+    - emcee ~=3.1
     - corner
     - matplotlib-base
     - scipy
@@ -38,7 +39,7 @@ test:
 
 about:
   home: http://github.com/zblz/naima
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: Derivation of non-thermal particle distributions through MCMC spectral fitting
