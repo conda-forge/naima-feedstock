@@ -1,5 +1,5 @@
 {% set name = "naima" %}
-
+{% set python_min = "3.10" %}
 {% set version = "0.10.2" %}
 
 package:
@@ -24,11 +24,11 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
-    - astropy-base >=4.3
-    - emcee ~=3.1
+    - numpy >=2.0
+    - astropy-base >=6.1
+    - emcee
     - corner
-    - matplotlib-base
+    - matplotlib-base >=1.4.0
     - scipy
     - h5py
     - pyyaml
