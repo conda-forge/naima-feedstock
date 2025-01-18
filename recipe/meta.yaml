@@ -1,6 +1,6 @@
 {% set name = "naima" %}
 
-{% set version = "0.10.0" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -9,11 +9,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08a3f9775c6322f0d89eb83134ef03b0e1cd46a1300439f3bbff4f41f315cfd2
+  sha256: 26f94829d7464ed76e7cb524787d0110b8d1f6b59b1b534025939f03fd828209
 
 build:
   noarch: python
-  number: 4
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
