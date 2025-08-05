@@ -26,12 +26,12 @@ requirements:
     - python >={{ python_min }}
     - numpy >=2.0
     - astropy-base >=6.1
-    - emcee
-    - corner
+    - emcee >=3.0
+    - corner >=2.0
     - matplotlib-base >=1.4.0
-    - scipy
-    - h5py
-    - pyyaml
+    - scipy >=1.15.3
+    - h5py >=3.14.0
+    - pyyaml >=6.0.2
 
 test:
   requires:
