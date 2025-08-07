@@ -1,6 +1,6 @@
 {% set name = "naima" %}
-{% set python_min = "3.10" %}
-{% set version = "0.10.2" %}
+{% set python_min = "3.11" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 26f94829d7464ed76e7cb524787d0110b8d1f6b59b1b534025939f03fd828209
+  sha256: 3e86de6d9114ae9c683b3ae311451d1de6e9d9574f923b7b133a86d1dac7e39b
 
 build:
   noarch: python
@@ -26,12 +26,12 @@ requirements:
     - python >={{ python_min }}
     - numpy >=2.0
     - astropy-base >=6.1
-    - emcee
-    - corner
-    - matplotlib-base >=1.4.0
-    - scipy
-    - h5py
-    - pyyaml
+    - emcee >=3.0
+    - corner >=2.0
+    - matplotlib-base >=3.10.0
+    - scipy >=1.15.3
+    - h5py >=3.14.0
+    - pyyaml >=6.0.2
 
 test:
   requires:
