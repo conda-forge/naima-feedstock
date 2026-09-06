@@ -1,6 +1,6 @@
 {% set name = "naima" %}
 {% set python_min = "3.11" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e86de6d9114ae9c683b3ae311451d1de6e9d9574f923b7b133a86d1dac7e39b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c9abb544ee547db34d9678b16641c48fb36d9acf52871952ca133b7c98fe2ae8
 
 build:
   noarch: python
